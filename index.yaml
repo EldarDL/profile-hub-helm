@@ -18,7 +18,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.0.11
-    created: "2025-07-20T22:56:53.5241461+03:00"
+    created: "2025-07-20T23:07:58.5111529+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -50,16 +50,30 @@ entries:
   profile-hub:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-20T22:56:53.5197291+03:00"
+    created: "2025-07-20T23:07:58.5066833+03:00"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
       version: 16.5.32
     description: A Helm chart for Profile Hub application
-    digest: d9c726abd3e333b3d1ba5bf5a0a8754ac44bea5e8292344ad8c391784d7ce379
+    digest: 5fb03897e4379caccf51005a828b06179785f248d279d158d97bb9d5da5516b3
+    name: profile-hub
+    type: application
+    urls:
+    - https://EldarDL.github.io/profile-hub-helm/profile-hub-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T23:07:58.4901041+03:00"
+    dependencies:
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.32
+    description: A Helm chart for Profile Hub application
+    digest: 058e8fb6c558f629f0b1e9c65ef52e307ef1dee45fe53e878611122abc27efe3
     name: profile-hub
     type: application
     urls:
     - https://EldarDL.github.io/profile-hub-helm/profile-hub-0.1.1.tgz
     version: 0.1.1
-generated: "2025-07-20T22:56:53.5122433+03:00"
+generated: "2025-07-20T23:07:58.4779597+03:00"
