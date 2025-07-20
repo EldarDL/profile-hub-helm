@@ -1,0 +1,52 @@
+# Default values for profile-hub
+replicaCount: 2
+
+image:
+  repository: "" 
+  pullPolicy: IfNotPresent
+  tag: ""
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+service:
+  type: ClusterIP
+  port: 5000
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+  hosts:
+    - host: ""
+      paths:
+        - path: "/"
+          pathType: ImplementationSpecific
+  tls: []
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+mongodb:
+  enabled: true
+  auth:
+    enabled: true
+  architecture: "replicaset"
+  replicaCount: 1
+  persistence:
+    enabled: true
+    size: 1Gi
+    
+app:
+  port: 5000

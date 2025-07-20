@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "profile-hub.fullname" . }}-config
+  labels:
+    {{- include "profile-hub.labels" . | nindent 4 }}
+data:
+  APP_PORT: {{ .Values.app.port | quote }}
