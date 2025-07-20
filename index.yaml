@@ -3,7 +3,21 @@ entries:
   profile-hub:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-20T23:30:26.4025944+03:00"
+    created: "2025-07-20T23:36:58.5861471+03:00"
+    dependencies:
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.32
+    description: A Helm chart for Profile Hub application
+    digest: 3dfb85e954fe7dc7edf9980edecb86be4ac0cb98bb84ea74086eb46a75c074ae
+    name: profile-hub
+    type: application
+    urls:
+    - https://EldarDL.github.io/profile-hub-helm/profile-hub-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-20T23:36:58.5803838+03:00"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -17,7 +31,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-20T23:30:26.3974469+03:00"
+    created: "2025-07-20T23:36:58.5749391+03:00"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -29,4 +43,4 @@ entries:
     urls:
     - https://EldarDL.github.io/profile-hub-helm/profile-hub-0.1.3.tgz
     version: 0.1.3
-generated: "2025-07-20T23:30:26.3925617+03:00"
+generated: "2025-07-20T23:36:58.5690824+03:00"
